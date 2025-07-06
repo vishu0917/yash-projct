@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Result</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="quiz.css" />
+</head>
+<body class="dark">
+  <main class="container">
+    <section id="result-box">
+      <h2>Quiz Completed!</h2>
+      <p id="score">Your Score: </p>
+      <a href="index.html" class="card">Back to Home</a>
+    </section>
+  </main>
+  <script>
+    const score = localStorage.getItem("score");
+    const total = localStorage.getItem("total");
+    document.getElementById("score").textContent = `Your Score: ${score}/${total}`;
+  </script>
+</body>
+</html>

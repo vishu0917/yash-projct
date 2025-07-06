@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frontend Quiz App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="dark">
+  <main class="container">
+    <header>
+      <h1>Welcome to the <strong>Frontend Quiz!</strong></h1>
+      <p>Pick a subject to get started.</p>
+      <div class="toggle-switch">
+        <span>🌙</span>
+        <label class="switch">
+          <input type="checkbox" id="modeToggle">
+          <span class="slider"></span>
+        </label>
+        <span>☀️</span>
+      </div>
+    </header>
+
+    <section class="subjects">
+      <a href="quiz.html?subject=html" class="card html">🔶 HTML</a>
+      <a href="quiz.html?subject=css" class="card css">🟦 CSS</a>
+      <a href="quiz.html?subject=js" class="card js">🟨 Javascript</a>
+      <a href="quiz.html?subject=accessibility" class="card acc">♿ Accessibility</a>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
